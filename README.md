@@ -2,10 +2,6 @@
   Portfolio Website<br/>
   <a href="" target="_blank"></a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
-
 <br/>
 
 <center>
@@ -13,15 +9,6 @@
 
 
 </center>
-
-<h3 align="center">
-    🔹
-    <a href="">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="">Request Feature</a>
-</h3>
-
-## TL;DR
 
 
 ## Built With
