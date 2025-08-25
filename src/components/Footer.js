@@ -12,16 +12,17 @@ function Footer() {
   const year = date.getFullYear();
 
   return (
-    <Container fluid className="footer text-center py-3">
-      <Row className="justify-content-center">
-        <Col md="12" className="footer-copywright">
+    <Container fluid className="footer">
+      <Row>
+        <Col md="4" className="footer-copywright">
           <h3>Designed and Developed by Laxminarayan Dash</h3>
+        </Col>
+        <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
           <h3>InputIsEvil</h3>
         </Col>
-
-        <Col md="12" className="footer-body mt-3">
-          <ul className="footer-icons d-flex justify-content-center gap-3 list-unstyled">
+        <Col md="4" className="footer-body">
+          <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/yourusername"
@@ -30,7 +31,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <AiFillGithub size={28} />
+                <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
@@ -41,7 +42,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Twitter"
               >
-                <AiOutlineTwitter size={28} />
+                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -52,7 +53,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <FaLinkedinIn size={28} />
+                <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
@@ -63,7 +64,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <AiFillInstagram size={28} />
+                <AiFillInstagram />
               </a>
             </li>
           </ul>
