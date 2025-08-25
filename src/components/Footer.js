@@ -8,65 +8,68 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
+    <Container fluid className="footer text-center py-3">
+      <Row className="justify-content-center">
+        <Col md="12" className="footer-copywright">
           <h3>Designed and Developed by Laxminarayan Dash</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
           <h3>Copyright © {year}</h3>
-	<h3>InputIsEvil</h3>
+          <h3>InputIsEvil</h3>
         </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+
+        <Col md="12" className="footer-body mt-3">
+          <ul className="footer-icons d-flex justify-content-center gap-3 list-unstyled">
             <li className="social-icons">
               <a
-                href=""
+                href="https://github.com/yourusername"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <AiFillGithub />
+                <AiFillGithub size={28} />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href=""
+                href="https://twitter.com/yourusername"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
-                <AiOutlineTwitter />
+                <AiOutlineTwitter size={28} />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href=""
+                href="https://linkedin.com/in/yourusername"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn size={28} />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href=""
+                href="https://instagram.com/yourusername"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
-                <AiFillInstagram />
+                <AiFillInstagram size={28} />
               </a>
             </li>
           </ul>
         </Col>
       </Row>
     </Container>
-
   );
 }
 
