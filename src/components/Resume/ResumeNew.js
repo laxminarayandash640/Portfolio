@@ -8,7 +8,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 
 // Import your PDF file
-import pdf from "../../Assets/Resume.pdf"; // make sure Resume.pdf is in src/Assets
+import pdf from ""; // make sure Resume.pdf is in src/Assets
 
 // Set worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
