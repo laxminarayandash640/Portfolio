@@ -6,6 +6,11 @@ import Particle from "../Particle";
 
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+
+// Import your PDF file
+import pdf from "../../Assets/Resume.pdf"; // make sure Resume.pdf is in src/Assets
+
+// Set worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -19,6 +24,8 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
+
+        {/* Top Download Button */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -31,12 +38,14 @@ function ResumeNew() {
           </Button>
         </Row>
 
+        {/* Resume Preview */}
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 
+        {/* Bottom Download Button */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
