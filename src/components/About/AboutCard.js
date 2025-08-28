@@ -31,7 +31,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Make the changes you will se the difference"{" "}
+            "Be patient. Focus on your work. See the difference"{" "}
           </p>
           <footer className="blockquote-footer">Laxminarayan Dash</footer>
         </blockquote>
